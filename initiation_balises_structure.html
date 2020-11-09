@@ -1,0 +1,76 @@
+<!doctype html>
+<!-- toutes les pages web sont contenues dans des balises html -->
+<html>
+    <!-- dans la balise head, on met des informations relatives à la page mais qui ne sont pas affichées dans son contenu -->
+    <head>
+        <!-- les balises meta ne s'affichent pas sur le site, mais sont lues par les navigateurs et les moteurs de recherche.  -->
+        
+        <!-- la ligne ci-dessous définit l'encodage des caractères utilisés. L'UTF-8 est le plus répandu.  -->
+        <meta charset="UTF-8" />
+        
+        <!-- la description est adressée au moteurs de recherche. Elle sert au référencement et apparaît comme extrait de la page dans les résultats de recherche. -->
+        <meta name="description" content="Créer et modifier des pages web en HTML et CSS" />
+        
+        <!-- Titre de la page, qui apparaît sur l'onglet du navigateur -->
+        <title>Initiation au HTML // Les balise de structure</title>
+    </head>
+    
+    <!-- la balise body encadre le contenu affiché dans la page -->
+    <body>
+        
+        <h1>Les balises de structure</h1>
+        
+        <p>Elles permettent de créer l'architecture d'une page web en la divisant en blocs, dans lesquels on place ensuite le contenu. <br>
+            
+            Avec le HTML5, ces balises de structure portent désormais, pour la plupart, des noms prédéfinis indiquant la fonction du bloc.<br>
+            
+            Ces blocs peuvent contenir directement du contenu, ou d'autres blocs imbriqués.<br>
+            
+            On leur attribue généralement un identifiant, qui doit être unique dans une même page, et/ou une classe, qui elle peut être attribuée à plusieurs blocs. Ainsi on peut cibler le bloc et définir son apparence en CSS (hauteur, largeur, couleur d'arrière-plan...).<br>
+        </p>
+        
+        <h2>La balise section</h2>
+        <p>Elle représente une section générique d'un document, en général un groupe de contenu.</p>
+        <section>
+            <h3>Titre de la section</h3>
+            <p>Paragraphe contenu dans la section.</p>
+        </section>
+        
+        <h2>La balise article</h2>
+        <p>Elle représente du contenu autonome dans un document. Ceci peut être un message sur un forum, un article de journal ou de magazine, une parution sur un blog, un commentaire d'utilisateur, ou tout autre élément de contenu indépendant.</p>
+        
+        <article>
+            <h3>Titre de l'article</h3>
+            <p>Paragraphe contenu dans l'article.</p>
+        </article>
+        
+        <h2>La balise header</h2>
+        <p>Elle représente un entête, pour la page globale ou pour un article, et contient en général un groupe de contenu introductif ou de contenu aidant à la navigation. Elle peut contenir des éléments de titre, mais aussi d'autres éléments tels qu'un logo, un formulaire de recherche, etc. <br>
+        Il peut y avoir plusieurs header dans un même document.<br>
+        </p>
+        
+        <header>
+            <h3>Titre dans une balise header</h3>
+        </header>
+        
+        <h2>La balise footer</h2>
+        <p>Elle contient le pied de la page ou de la section. Un pied de page ou de section contient habituellement des informations sur l'auteur de la section, les données relatives au droit d'auteur (copyright) ou les liens vers d'autres documents en relation.</p>
+        
+        <footer>
+            <p>Quelques informations de copyright ou bien quelques informations sur l'auteur de l'article.</p>
+        </footer>
+        
+        <h2>La balise div</h2>
+        <p>Une div (division du document) est une balise de structure générique, qu'on utilise pour un bloc qui n'a pas de fonction prédéfinie.</p>
+        <div>Contenu inséré dans une div</div>
+
+        <br>
+        <hr>
+        <footer>
+            <nav>
+                <a href="initiation_balises_contenu.html">Les balises de contenu</a> | <a href="initiation_exemple_structure.html">Exemple de structure</a>
+            </nav>
+            <p>© Mahé NEEL</p>
+        </footer>
+    </body>
+</html>        

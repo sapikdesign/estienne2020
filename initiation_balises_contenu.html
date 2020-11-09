@@ -1,0 +1,145 @@
+<!doctype html>
+<!-- toutes les pages web sont contenues dans des balises html -->
+<html>
+    <!-- dans la balise head, on met des informations relatives à la page mais qui ne sont pas affichées dans son contenu -->
+    <head>
+        <!-- les balises meta ne s'affichent pas sur le site, mais sont lues par les navigateurs et les moteurs de recherche.  -->
+        
+        <!-- la ligne ci-dessous définit l'encodage des caractères utilisés. L'UTF-8 est le plus répandu.  -->
+        <meta charset="UTF-8" />
+        
+        <!-- la description est adressée au moteurs de recherche. Elle sert au référencement et apparaît comme extrait de la page dans les résultats de recherche. -->
+        <meta name="description" content="Créer et modifier des pages web en HTML et CSS" />
+        
+        <!-- Titre de la page, qui apparaît sur l'onglet du navigateur -->
+        <title>Initiation au HTML // Les balises de contenu</title>
+    </head>
+    
+    <!-- la balise body encadre le contenu affiché dans la page -->
+    <body>
+        
+        <h1>Les balises de contenu</h1>
+
+        <p>En HTML, les balises permettent de distinguer les différents éléments d'une page web en les encadrant entre une balise d'ouverture et une balise de fermeture.<br>
+            Le nom d'un élément HTML est le nom utilisé dans des chevrons, comme par exemple p pour un paragraphe.
+            Le nom de la balise fermante est précédé par un caractère barre oblique. <br>
+            Pour les éléments vides (image, saut de ligne, séparateur...), il n'y a pas de balise de fin. <br>
+            <br>
+            On peut leur attribuer un identifiant (id) et/ou une classe (class) pour pouvoir définir leur apparence en CSS (couleur de texte, police, corps, alignement...).
+            <br><br>
+            Les balises de contenu sont détectées et interprétées par les navigateurs, même si aucun style supplémentaire n'est précisé. 
+            <br>
+            Simplement avec ces balises, on peut structurer une page html en distinguant du texte courant, des titres, des listes, des liens...
+            
+        </p>
+        
+        <h2>Le texte</h2>
+        <p>L'élément html p représente un paragraphe de texte. Les paragraphes sont généralement représentés comme des blocs et séparés par un espace horizontal.</p>
+        
+        <h3>Habiller du texte</h3>
+        Dans tous les types de texte (paragraphes, titres, listes...), on peut ajouter des balises pour :
+        <br>Faire un retour à la ligne, avec br<br>
+        <strong>Mettre du texte en gras, avec strong</strong><br>
+        <i>Mettre du texte en italique, avec i</i><br>
+        Mettre un filet de séparation avec hr
+            <hr/>
+                
+        <h2>Les titres</h2>
+        
+        <p>Les titres permettent de hiérarchiser le texte, mais servent également au référencement : les moteurs de recherche considèrent que les titres contiennent des mots-clés important, ils scannent donc les pages en commençant par les titres.</p>
+            
+        <p>Il existe 6 niveaux de titre :</p>
+            <h1>Titre h1</h1>
+            <h2>Sous titres h2</h2>
+            <h3>Sous titres h3</h3>
+            <h4>Sous titres h4</h4>
+            <h5>Sous titres h5</h5>
+            <h6>Sous titres h6</h6>
+        
+        <h2>Les listes</h2>
+        <h3>Les listes à puces avec ul</h3>
+        <ul>
+            <li>Élément de liste li</li>
+            <li>Élément de liste li</li>
+            <li>Élément de liste li</li>
+        </ul>
+
+        <h3>Les listes ordonnées (numériques) avec ol</h3>
+        <ol>
+            <li>Élément de liste li</li> 
+            <li>Élément de liste li</li>
+            <li>Élément de liste li</li>
+        </ol>
+        
+        <h2>Les liens</h2>
+        Les liens sont encadrés par une balise a, à laquelle on attribue au moins un paramètre : l'adresse vers laquelle doit pointer le lien. On peut ensuite définir un titre, qui apparait au survol du lien, et une cible, pour préciser si le lien doit s'ouvrir dans la même fenêtre (par défaut) ou dans une nouvelle.
+        <h3>Lien absolu : </h3>
+        
+        <a href="https://developer.mozilla.org/fr" title="Guide Mozilla" target="_blank">Cliquer ici</a> pour aller sur un lien externe au site <br />
+
+        <h3>Lien relatif : </h3>
+        <a href="initiation_balises_structure.html" title="Voir la documentation sur les balises de structure">Lien interne à mon site</a> relatif au dossier racine<br>
+
+        <h3>Lien email : </h3>
+        <a href="mailto:mahe@sapikdesign.com">Cliquer ici</a>va déclencher un logiciel de mail (Outlook, Entourage...)
+        
+        <h2>Les images</h2>
+        <p>Les images doivent être stockées dans le dossier contenant le site, éventuellement rangées dans un dossier spécifique. On fait ainsi un lien vers l'image, en indiquant en source (src) le chemin entre le fichier html et l'image.<br>
+        Les formats acceptés sont le jpg, le gif (animé ou non), le png (utilisé pour la gestion de la transparence) et le svg (format vectoriel).<br>   
+        Pour afficher un pdf, il faudra faire un lien vers le fichier, qui s'ouvrira grâce à Adobe Reader.<br>    
+        Le champs alt permet d'ajouter des informations sur l'image, utiles pour son référencement et lues par les navigateurs pour les malvoyants. Si l'image est manquante, c'est le contenu du champs qui sera affiché.<br>
+        On peut définir la taille de l'image directement dans la balise, en ajoutant les paramètres width (largeur) et/ou height (hauteur) et en indiquant une valeur, en pixels par défaut.
+        </p>
+                
+        <img src="images/016-book01-1-vocabulaire1.jpg" alt="Écrire une balise" height="300" >
+
+        <a href="https://www.lumni.fr/dossier/le-html-par-lui-meme-1-2" target="_blank">
+            <img src="images/daltons.gif" alt="logo chanel" height="300" >
+        </a>
+        
+        <h2>La balise span</h2>
+        <p>Elle ne représente rien de particulier, mais permet d'appliquer un style à du texte, soit directement en ajoutant un style à la suite (cf ci-dessous : les couleurs), soit en lui attribuant une classe qui sera reprise en CSS.<br>
+        Elle doit uniquement être utilisée lorsqu'aucun autre élément sémantique n'est approprié.</p>
+        
+        <h2>Les couleurs</h2>
+        <p>Elles sont appliquées en encadrant les termes par une balise span, qui permet d'ajouter un style à du texte; ici le style color. <br />Les couleurs sont définies par différentes unités de valeurs : <br></p>
+        <ul>
+            <li>Valeur héxadécimale, composée de 6 caractères précédés d'un dièse<br>
+                Blanc = #ffffff ou #fff // Noir = #000000 ou #000 </li>
+            <li>Valeur nominale prédéfinie<br>
+                Blanc = white // Noir = black</li>
+            <li>Valeur rgb, qui permet d'ajouter un paramètre d'opacité.<br>
+                Blanc = rgb(255,255,255) // Noir = rgb(0,0,0)</li>
+        </ul>    
+        <span style=color:red>Rouge (red)</span> <br>
+        <span style=color:deepskyblue>Bleu (deepskyblue)</span><br>
+        <span style=color:#ff99cc>Rose (#ff99cc)</span><br>
+        <span style=color:#ffcc99>Orange (#ffcc99)</span><br>
+        <span style=color:rgba(0,0,0,0.5)>Noir avec opacité de 50%</span>
+        
+        <h2>NE PAS OUBLIER</h2>
+        <ul>
+            <li>Nommer les fichiers sans espace, ni majuscules ni accents ou caractères spéciaux.<br>
+            Cela vaut pour les fichiers html mais aussi pour les images.</li>
+            <li>Vérifier que les balises qui doivent l'être sont fermées.</li>
+            <li>Le poids des images doit être optimisé au mieux pour être le plus léger possible, tout en conservant une bonne qualité, pour ne pas impacter négativement sur le temps de chargement de la page.</li>
+        </ul>
+        
+        <h2>Liens utiles</h2>
+        <ul>
+            <li>Pour créer des visuels : <a href="https://www.canva.com/" target="_blank">canva.com</a></li>
+            <li>Pour travailler les images : <a href="https://www.photopea.com/" target="_blank">Photopea</a></li>
+            <li>Pour en savoir plus : <a href="https://www.alsacreations.com/" target="_blank">alsacreations.com</a></li>
+        </ul>
+        <br>
+        <hr>
+        <footer>
+            <nav>
+                <a href="initiation_balises_structure.html">Les balises de structure</a> | <a href="initiation_exemple_structure.html">Exemple de structure</a>
+            </nav>
+            <p>© Mahé NEEL</p>
+        </footer>
+
+    </body>
+    
+</html>
